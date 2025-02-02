@@ -1,0 +1,72 @@
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-image: url('sky3.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+
+
+.navbar {
+    background-color:rgba(0, 0, 0, 0.717);
+    padding: 10px;
+}
+.navbar ul {
+    list-style: none;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+.navbar li {
+    margin-right: 15px;
+    margin-left: 2cm;
+}
+.navbar a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    font-size: 16px;
+}
+.navbar a:hover {
+    color:rgb(183, 180, 9);
+}
+
+.head {
+    font-size: 3rem;
+    text-align: center;
+     color: white;
+    
+}
+
+
+.intro {
+    text-align: center;
+    padding: 20px;
+    color: white;
+}
+.intro h2 {
+    font-size: 1.8rem;
+}
+.intro p {
+    font-size: 1rem;
+    margin-left: 5cm;
+    max-width: 800px;
+}
+.intro a {
+    color: black;
+    font-weight: bold;
+    text-decoration: none;
+}
+.intro a:hover {
+    text-decoration: underline;
+}
+
+#title{
+    color: black;
+}

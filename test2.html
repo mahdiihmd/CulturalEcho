@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>World Cultures</title>
+    <link rel="stylesheet" href="CSS.css">
+    <link rel="icon" href="favicon.jpg">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav class="navbar">
+        <ul>
+          <li><a href="main.html">Home</a></li>
+          <li><a href="page2.html">Sustainable Tourism</a></li>
+          <li><a href="explore.html">Explore</a></li>
+          <li><a href="add your memory.html">Add your memory</a></li>
+         
+        </ul>
+      </nav>
+      
+    <div class="container">
+      
+        <div class="culture-card">
+            <img src="R.jfif" alt="Culture of Thailand">
+            <div class="description">This is the culture of Thailand. It is rich in traditions and art.</div>
+            <div class="stars">⭐⭐⭐</div>
+            <button class="show-btn" onclick="openDescription('modal-thailand')">Show Details</button>
+            <div id="modal-thailand" class="modal">
+                <div class="modal-content">
+                    <span class="close" onclick="closeDescription('modal-thailand')">&times;</span>
+                    <h2>About Thailand</h2>
+                    <p>Thailand’s history dates back to several ancient kingdoms, including the Sukhothai Kingdom (13th century), the Ayutthaya Kingdom (14th to 18th century), and the Kingdom of Siam, which eventually became modern Thailand in 1939.</p>
+                    <p>Thailand’s culture has been influenced by neighboring countries like India, China, Cambodia, and Laos, incorporating elements such as Buddhism, art, and architecture into its own cultural fabric.</p>
+                </div>
+            </div>
+    
+        </div>
+
+       
+        <div class="culture-card">
+            <img src="OIP.jfif" alt="Culture of Korea">
+            <div class="description">The culture of Korea is vibrant and full of life.</div>
+            <div class="stars">⭐⭐</div>
+            <button class="show-btn" onclick="openDescription('modal-korea')">Show Details</button>
+            <div id="modal-korea" class="modal">
+                <div class="modal-content">
+                    <span class="close" onclick="closeDescription('modal-korea')">&times;</span>
+                    <h2>About Korea</h2>
+                    <p>Korea's history dates back thousands of years, with early kingdoms such as Gojoseon, Baekje, Silla, and Goguryeo. These kingdoms contributed to Korea's distinct language, traditions, and culture.</p>
+                    <p>After World War II, Korea was divided into two states: North Korea (Democratic People's Republic of Korea) and South Korea (Republic of Korea). This division continues to influence Korean culture and politics.</p>
+                </div>
+            </div>
+        </div>
+
+       
+        <div class="culture-card">
+            <img src="lebanon.jpj.jpg" alt="Culture of Lebanon">
+            <div class="description">Lebanon's culture is known for its music and festivals.</div>
+            <div class="stars">⭐⭐⭐⭐⭐</div>
+            <button class="show-btn" onclick="openDescription('modal-lebanon')">Show Details</button>
+            <div id="modal-lebanon" class="modal">
+                <div class="modal-content">
+                    <span class="close" onclick="closeDescription('modal-lebanon')">&times;</span>
+                    <h2>About Lebanon</h2>
+                    <p>Lebanon has a unique and diverse culture shaped by its history, geography, and the variety of ethnic and religious groups that make up its population.</p>
+                    <p>Lebanon's history dates back to ancient civilizations such as the Phoenicians, known for their contributions to trade, the alphabet, and seafaring. The ruins of cities like Byblos, Baalbek, and Tyre are evidence of this rich heritage.</p>
+                </div>
+            </div>
+        </div>
+
+        
+        <div class="culture-card">
+            <img src="R (1).jfif" alt="Culture of Greece">
+            <div class="description">The culture of Greece is deeply rooted in history.</div>
+            <div class="stars">⭐⭐⭐⭐</div>
+            <button class="show-btn" onclick="openDescription('modal-greece')">Show Details</button>
+
+            <div id="modal-greece" class="modal">
+                <div class="modal-content">
+                    <span class="close" onclick="closeDescription('modal-greece')">&times;</span>
+                    <h2>About Greece</h2>
+                    <p>Ancient Greece is considered the birthplace of Western philosophy, with figures like Socrates, Plato, and Aristotle. It is also where democracy was developed, particularly in Athens..</p>
+                    <p> The Greeks are known for their architectural marvels like the Parthenon. They made significant contributions to sculpture, pottery, and theater, with iconic playwrights like Sophocles and Euripides.</p>
+                </div>
+            </div>
+        </div>
+
+        
+        <div class="culture-card">
+            <img src="Barcelona.jfif" alt="Culture of Spain">
+            <div class="description">The culture of Spain is rich in traditions</div>
+            <div class="stars">⭐⭐⭐⭐</div>
+            <button class="show-btn" onclick="openDescription('modal-spain')">Show Details</button>
+
+            <div id="modal-spain" class="modal">
+                <div class="modal-content">
+                    <span class="close" onclick="closeDescription('modal-spain')">&times;</span>
+                    <h2>About Spain</h2>
+                    <p>Spain’s culture reflects a mix of influences from ancient civilizations, including the Romans, Visigoths, Moors, and Christians. This blend is evident in its architecture, language, and traditions.</p>
+                    <p> Spain is made up of 17 autonomous communities, each with its own cultural identity, language, and traditions. Catalonia, Andalusia, the Basque Country, and Galicia are examples of regions with distinct cultures.</p>
+                </div>
+            </div>
+        </div>
+
+          
+           <div class="culture-card">
+            <img src="pyramids.jfif" alt="Culture of Egypt">
+            <div class="description">The Egyptian culture is one of the oldest cultures in the world</div>
+            <div class="stars">⭐⭐⭐⭐</div>
+            <button class="show-btn" onclick="openDescription('modal-egypt')">Show Details</button>
+
+            <div id="modal-egypt" class="modal">
+                <div class="modal-content">
+                    <span class="close" onclick="closeDescription('modal-egypt')">&times;</span>
+                    <h2>About Egypt</h2>
+                    <p>Egypt’s ancient civilization, dating back over 5,000 years, is renowned for its iconic landmarks, including the Pyramids of Giza, the Great Sphinx, and the temples of Luxor and Karnak.</p>
+                    <p>The ancient Egyptian writing system, hieroglyphs, is one of the earliest forms of written communication.</p>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+
+    <script>
+       
+        function openDescription(modalID) {
+            var modal = document.getElementById(modalID);
+            modal.style.display = "block";
+        }
+
+    
+        function closeDescription(modalID) {
+            var modal = document.getElementById(modalID);
+            modal.style.display = "none";
+        }
+    </script>
+</body>
+</html>

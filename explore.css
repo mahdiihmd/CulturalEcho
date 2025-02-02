@@ -1,0 +1,75 @@
+
+body {   font-family: 'Poppins', sans-serif;
+         text-align: center; 
+         background: linear-gradient(100deg, #051828, #00f2fe);
+         margin: 0;
+        }
+
+        .navbar {
+            background-color: rgba(0, 0, 0, 0.717);
+            padding: 15px;
+            }
+        .navbar ul {
+            list-style: none;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+        }
+        .navbar li {
+            margin-right: 15px;
+            margin-left: 2cm;
+        }
+        .navbar a {
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+            font-size: 16px;
+        }
+        .navbar a:hover {
+            color: rgb(183, 180, 9);
+        }
+.container { 
+    width: 60%; 
+    margin: auto;
+     padding: 20px;
+    }
+    select {
+        padding: 12px;
+        font-size: 16px;
+        border: 2px solid #007BFF;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+
+    select:hover {
+        background-color: gainsboro;
+    }
+    
+    .content {
+        background-color: rgba(255, 255, 255, 0.8);
+        border-left: 5px solid rgba(0, 0, 0, 0.76);
+        padding: 15px;
+        margin-top: 15px;
+        box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+    }
+    @keyframes slideIn {
+        from {
+            opacity: 0;
+            transform: translateX(-20px);
+        }
+        to {
+            opacity: 1;
+            transform: translateX(0);
+        }
+    }
+    
+    .content {
+        animation: slideIn 1s ease-in-out;
+    }
+
+.description {
+    font-size: 18px;
+    color: whitesmoke;
+    margin-bottom: 15px;
+}
+

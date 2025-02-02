@@ -1,0 +1,105 @@
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color:wheat ;
+    margin: 0;
+  }
+  
+  .navbar {
+    background-color: rgba(0, 0, 0, 0.717);
+    padding: 10px;
+    }
+.navbar ul {
+    list-style: none;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+.navbar li {
+    margin-right: 15px;
+    margin-left: 2cm;
+}
+.navbar a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    font-size: 16px;
+}
+.navbar a:hover {
+    color: rgb(183, 180, 9);
+}
+
+
+
+.paragraph{
+  text-align: center;
+  margin-bottom: 2cm;
+  font-size: 1rem;
+  margin-left: 5cm;
+  max-width: 800px;
+}
+
+.images{
+    text-align: center;
+    margin-left: 7cm;
+    margin-bottom: 3cm;
+
+}
+
+textarea {
+    width: 100%; 
+    max-width: 500px;
+    height: 150px; 
+    font-size: 16px;
+    padding: 10px; 
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    margin-left: 7cm;
+}
+
+label{
+    margin-left: 7cm;
+    font-size:20px ;
+    font-weight: bold;
+}
+
+.submit-btn {
+    background-color: green;
+    font-size: 15px; 
+    padding: 10px 10px;
+    border-radius: 8px; 
+    cursor: pointer; 
+    margin-left: 7cm;
+    border: none;
+}
+
+
+.submit-btn:hover {
+    background-color: greenyellow;
+}
+
+footer {
+    background-color: rgba(0, 0, 0, 0.717);
+    color: #fff;
+    padding: 10px;
+    max-height: 4cm;
+    margin-top: 2cm;
+  }
+
+  footer h3 {
+    font-size: 1rem;
+    margin-bottom: 5px;
+  }
+
+  .social-links {
+    display: flex;
+    align-items: center;
+    gap: 2cm;
+    list-style: none;
+  }
+
+    .logo{
+      width: 20px; 
+      height: auto; 
+     
+    }

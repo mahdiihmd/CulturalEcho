@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Cultural Insights</title>
+    <link rel="stylesheet" href="explore.css">
+    <link rel="icon" href="favicon.jpg">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap" rel="stylesheet">
+
+</head>
+<body>
+
+    <nav class="navbar">
+        <ul>
+          <li><a href="main.html">Home</a></li>
+          <li><a href="test2.html">Take a tour !</a></li>
+          <li><a href="page2.html">Sustainable Tourism</a></li>
+          <li><a href="add your memory.html">Add your memory</a></li>
+        </ul>
+      </nav>
+
+
+    <p class="description">
+        Discover cultures around the world! Select a country to explore its food, traditions, and festivals.
+    </p>
+    
+    <div class="container">
+        <h1>🌍 Cultural Insights</h1>
+        <label for="country">Select a Country:</label>
+        <select id="country" onchange="loadCulture()">
+            <option value="">--Choose a Country--</option>
+            <option value="japan">Japan</option>
+            <option value="france">France</option>
+            <option value="india">India</option>
+            <option value="lebanon">Lebanon</option>
+            <option value="brazil">Brazil</option>
+            <option value="morocco">Morocco</option>
+        </select>
+        
+        <div id="culture-info" class="content">
+            <h2>Culture Information</h2>
+            <p>Select a country to view its cultural insights.</p>
+        </div>
+    </div>
+    
+    <script>
+        const culturalData = {
+            japan: {
+                food: "🍣 Sushi, Ramen, Tempura",
+                traditions: "🎎 Tea Ceremony, Sumo Wrestling, Kimono Wearing",
+                festivals: "🎆 Hanami (Cherry Blossom Festival), Obon, Tanabata"
+            },
+            france: {
+                food: "🥐 Croissants, Baguettes, Escargots",
+                traditions: "🎭 Bastille Day, Art & Literature, Cafe Culture",
+                festivals: "🎨 Cannes Film Festival, Tour de France, Wine Festivals"
+            },
+            india: {
+                food: "🍛 Biryani, Masala Dosa, Butter Chicken",
+                traditions: "🕌 Namaste Greeting, Yoga, Arranged Marriages",
+                festivals: "🎉 Diwali, Holi, Navratri"
+            },
+            lebanon: {
+                food: "🥙 Tabbouleh, Kibbeh, Manakish",
+                traditions: "🎼 Dabke Dance, Hospitality, Family Gatherings",
+                festivals: "🎊 Baalbeck International Festival, Byblos Festival, Eid Celebrations"
+            },
+            brazil: {
+                food: "🍖 Feijoada, Pão de Queijo, Açaí",
+                traditions: "⚽ Football Passion, Samba, Capoeira",
+                festivals: "🎭 Rio Carnival, Festa Junina, Parintins Folklore Festival"
+            },
+            morocco: {
+                food: "🍲 Tagine, Couscous, Pastilla",
+                traditions: "🕌 Hammam Rituals, Henna Art, Storytelling",
+                festivals: "🎶 Gnaoua World Music Festival, Mawazine, Rose Festival"
+            }
+        };
+        
+        function loadCulture() {
+            const country = document.getElementById("country").value;
+            const infoDiv = document.getElementById("culture-info");
+            
+            if (country && culturalData[country]) {
+                infoDiv.innerHTML = `
+                    <h2>${country.toUpperCase()} Culture</h2>
+                    <p><strong>Food:</strong> ${culturalData[country].food}</p>
+                    <p><strong>Traditions:</strong> ${culturalData[country].traditions}</p>
+                    <p><strong>Festivals:</strong> ${culturalData[country].festivals}</p>
+                `;
+            } else {
+                infoDiv.innerHTML = `<h2>Culture Information</h2><p>Select a country to view its cultural insights.</p>`;
+            }
+        }
+    </script>
+<p class="description">
+    Now,you can dive into this fabulous calender to check the most important festivals and events around the world!
+</p>
+ <div class="container">
+        <h1>📆 World Festival Calendar</h1>
+        <label for="month">Select a Month:</label>
+        <select id="month" onchange="showFestivals()">
+            <option value="">--Choose a Month--</option>
+            <option value="january">January</option>
+            <option value="february">February</option>
+            <option value="march">March</option>
+            <option value="april">April</option>
+            <option value="may">May</option>
+            <option value="june">June</option>
+            <option value="july">July</option>
+            <option value="august">August</option>
+            <option value="september">September</option>
+            <option value="october">October</option>
+            <option value="november">November</option>
+            <option value="december">December</option>
+        </select>
+
+        <div id="festival-list" class="content">
+            <h2>Festivals</h2>
+            <p>Select a month to view world festivals.</p>
+        </div>
+    </div>
+
+    <script>
+        const festivals = {
+            january: ["🎊 Chinese New Year (China)", "🎭 Harbin Ice Festival (China)", "🎉 Hogmanay (Scotland)"],
+            february: ["💘 Carnival of Venice (Italy)", "🎭 Rio Carnival (Brazil)", "🎆 Lantern Festival (China)"],
+            march: ["🌸 Holi (India)", "🍀 St. Patrick’s Day (Ireland)", "🎭 Las Fallas (Spain)"],
+            april: ["🐰 Easter (Worldwide)", "🎉 Songkran (Thailand)", "🌸 Cherry Blossom Festival (Japan)"],
+            may: ["🎨 Cannes Film Festival (France)", "🎶 Mawazine (Morocco)", "🎭 Cinco de Mayo (Mexico)"],
+            june: ["🎵 Glastonbury Festival (UK)", "🎉 Dragon Boat Festival (China)", "🍷 Inti Raymi (Peru)"],
+            july: ["🎆 Bastille Day (France)", "🎸 Montreux Jazz Festival (Switzerland)", "🎡 Naadam Festival (Mongolia)"],
+            august: ["🏇 Edinburgh Festival Fringe (Scotland)", "🎶 La Tomatina (Spain)", "🎭 Obon Festival (Japan)"],
+            september: ["🍷 Oktoberfest (Germany)", "🎉 Mid-Autumn Festival (China)", "🎭 Gnaoua Festival (Morocco)"],
+            october: ["🎃 Halloween (Worldwide)", "🎉 Diwali (India)", "🎭 Yi Peng Lantern Festival (Thailand)"],
+            november: ["🦃 Thanksgiving (USA)", "🎶 Day of the Dead (Mexico)", "🏮 Loy Krathong (Thailand)"],
+            december: ["🎄 Christmas (Worldwide)", "🎉 Hanukkah (Jewish Festival)", "🎆 New Year’s Eve (Worldwide)"]
+        };
+
+        function showFestivals() {
+            const month = document.getElementById("month").value;
+            const festivalDiv = document.getElementById("festival-list");
+
+            if (month && festivals[month]) {
+                festivalDiv.innerHTML = `<h2>Festivals in ${month}</h2>`;
+                festivals[month].forEach(festival => {
+                    festivalDiv.innerHTML += `<div class="festival-item">${festival}</div>`;
+                });
+            } else {
+                festivalDiv.innerHTML = "<h2>Festivals</h2><p>Select a month to view world festivals.</p>";
+            }
+        }
+    </script>
+</body>
+</html>

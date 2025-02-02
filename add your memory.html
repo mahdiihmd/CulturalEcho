@@ -1,0 +1,57 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" href="add your memory.css">
+  <link rel="icon" href="favicon.jpg">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap" rel="stylesheet">
+  <title>Add your Memory</title>
+</head>
+<body>
+
+<nav class="navbar">
+  <ul>
+    <li><a href="main.html">Home</a></li>
+    <li><a href="test2.html">Take a tour !</a></li>
+    <li><a href="page2.html">Sustainable Tourism</a></li>
+    <li><a href="explore.html">Explore</a></li>
+  </ul>
+</nav>
+
+<center><h2>"Share your beautiful experiences here!"</h2></center>
+
+
+ <p class="paragraph"> Sharing your stories can inspire others to explore new destinations they might not have
+   considered before.
+   Sharing tips and experiences helps others prepare for similar trips, offering valuable insights into culture,
+   logistics, and unique attractions.</p>
+
+<img class="images" src="hero_image_1.png">
+<img class="images" src="hero_image_3.png">
+
+<form id="story-form">
+  <label>Write your reviews:</label><br><br>
+  <textarea id="comments" name="comments" rows="5" cols="30" placeholder="Share you stories here.."></textarea><br><br>
+  <input type="submit" value="Submit" class="submit-btn">
+</form>
+
+<footer>
+  <h3>Contact Us</h3>
+  <p>Follow us on our social media platforms:</p>
+  <ul class="social-links">
+    <li><a href="https://facebook.com"><img class="logo" src="facebooklogo.jfif"></a></li>
+    <li><a href="https://twitter.com"><img class="logo" src="twitterlogo.jfif"></a></li>
+    <li><a href="https://instagram.com"><img class="logo" src="Instalogo.png"></a></li>
+</body>
+
+<script>
+ 
+  const form = document.getElementById('story-form');
+
+  form.addEventListener('submit', function(event) {
+      event.preventDefault(); 
+      alert('Thank you for sharing!'); 
+      form.reset();
+  });
+</script>
+</html>

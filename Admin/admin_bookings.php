@@ -77,36 +77,23 @@ $query = "
  SELECT 
     b.*,
 
-    -- get user name
-    (SELECT d.UserName
-        FROM data d
-        WHERE d.id = b.user_id
-    ) AS UserName,
+    d.UserName,
+    d.Email,
 
-    -- get user email
-    (SELECT d.Email
-        FROM data d
-        WHERE d.id = b.user_id
-    ) AS Email,
+    p.place_name,
+    p.image_url,
 
-    -- get place name
-    (SELECT p.place_name
-        FROM places p
-        WHERE p.place_id = b.place_id
-    )AS place_name,
-
-    -- get place image
-    (SELECT p.image_url
-        FROM places p
-        WHERE p.place_id = b.place_id
-    )AS image_url,
-
-    -- calculate days until departure
     DATEDIFF(b.departure_date, CURDATE()) AS days_until_departure
 
 FROM bookings b
+JOIN data d 
+    ON d.id = b.user_id
+JOIN places p 
+    ON p.place_id = b.place_id
+
 $where_sql
-ORDER BY b.created_at DESC;
+
+ORDER BY b.created_at DESC
 ";
 
 if (!empty($params)) {
